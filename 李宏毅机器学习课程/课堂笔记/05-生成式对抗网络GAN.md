@@ -46,9 +46,9 @@ $$
 
 $$
 V(G, D) = \mathbb{E}_{y \sim P_{\text{data}}}[\log D(y)] + \mathbb{E}_{y \sim P_G}[\log\left(1 - D(y)\right)],\\
-
 D^* = \arg\max_D V(G,D).
 $$
+
 $\displaystyle\max_D V(G,D)$ 与 $\text{Div}(P_G, P_{\text{data}})$ 有关(JS 散度)，所以就用 $\displaystyle\max_D V(G,D)$ 取代替散度：
 
 $$
