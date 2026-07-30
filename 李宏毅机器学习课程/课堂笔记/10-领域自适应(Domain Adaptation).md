@@ -51,8 +51,8 @@ domain shift 意思为训练数据跟测试数据的分布不一样：
 
 设：
 
-- $\mathcal{L}$ 为 label predictor 分类结果与实际分类之间的交叉熵损失。
-- $\mathcal{L}_\text{d}$ 为 domain classifier 对 feature extractor 输出的 feature 进行二元分类，判断来自哪个 domain，分类结果与实际分类之间的交叉熵损失。
+- $\mathcal{L}$ 为 label predictor 对 source domain 数据的分类结果与实际分类之间的交叉熵损失。
+- $\mathcal{L}_\text{d}$ 为 domain classifier 对 source domain 和 target domain 的数据经过 feature extractor 后输出的 feature 进行二元分类，判断来自哪个 domain，分类结果与实际分类之间的交叉熵损失。
 - $\theta_\text{d}$ 为 domain classifier 的参数。
 - $\theta_\text{f}$ 为 feature extractor 的参数。
 - $\theta_\text{l}$ 为  label predictor 的参数。
