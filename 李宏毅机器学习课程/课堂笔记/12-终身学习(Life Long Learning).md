@@ -47,7 +47,7 @@ $R_{i,j}$表示学完任务 $i$ 后在任务 $j$ 上的表现：
 
 如果能够让参数往 task 2 的椭圆 error surface 下缘靠近，那么在两个任务上都能有不错的表现。
 
-# 终身学习的三种方法
+# 终身学习的三大技术方向
 
 ## 选择性突触可塑性(Selective Synaptic Plasticity)
 
