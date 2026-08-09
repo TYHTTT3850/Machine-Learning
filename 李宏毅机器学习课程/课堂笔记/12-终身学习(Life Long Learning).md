@@ -55,10 +55,10 @@ $R_{i,j}$表示学完任务 $i$ 后在任务 $j$ 上的表现：
 
 假设 $\boldsymbol{\theta}_b$ 是在任务 1 上学习得到的参数组合，$\boldsymbol{\theta}_b$ 中每一个参数 $\theta_i$ 都有一个 guard $b_i$ 。
 
-假设 $\mathcal{L}_1(\boldsymbol{\theta})$ 是任务 1 的损失函数，那么在使用任务 2 训练时，损失函数改写为：
+假设 $\mathcal{L}_{\text{new}}(\boldsymbol{\theta})$ 是新任务本身的损失函数，但在训练时并不直接最小化$\mathcal{L}_{\text{new}}(\boldsymbol{\theta})$，而是改写为：
 
 $$
-\mathcal{L}_2(\boldsymbol{\theta}) = \mathcal{L}_1(\boldsymbol{\theta}) + \lambda \sum_{i} b_i(\theta_i^\prime - \theta_i)^2.
+\mathcal{L}_{\text{new}}^\prime(\boldsymbol{\theta}) = \mathcal{L}_{\text{new}}(\boldsymbol{\theta}) + \lambda \sum_{i} b_i(\theta_i^\prime - \theta_i)^2.
 $$
 
 $\theta_i^\prime$ 就是新学到的参数，$b_i$ 就代表这一个参数对任务 1 的重要程度：
