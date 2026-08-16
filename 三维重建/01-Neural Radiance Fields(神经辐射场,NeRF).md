@@ -41,8 +41,7 @@ $$
 z \cdot u \\
 z \cdot v \\
 z
-\end{bmatrix}
-= 
+\end{bmatrix}= 
 \underbrace{
 \begin{bmatrix}
 k_{x'} \cdot f & -k_{x'} \cdot f \cdot \cot\theta & u_0 & 0 \\
